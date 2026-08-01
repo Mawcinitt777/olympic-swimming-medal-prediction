@@ -1,4 +1,12 @@
 # Olympic Swimming Medal Prediction
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-black?logo=pandas)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue)
+
+<p align="center">
+  <img src="cover.png" alt="Olympic Swimming Medal Prediction" width="100%">
+</p>
 
 ## Project Overview
 
