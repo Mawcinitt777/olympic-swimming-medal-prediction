@@ -119,10 +119,14 @@ olympics_2028_predictions.csv
 
 ## Future Improvements
 
-- Train the models using additional athlete performance metrics.
-- Incorporate recent international competition results.
-- Evaluate ensemble and boosting algorithms such as XGBoost and LightGBM.
-- Deploy the prediction model as an interactive web application.
+- Incorporate athlete-level performance variables such as personal best times, recent competition results, world rankings, age, and performance trends.
+- Add results from recent international competitions and Olympic qualification events to reduce reliance on older historical patterns.
+- Explore additional techniques for handling class imbalance, including resampling strategies and alternative class-weighting approaches.
+- Evaluate advanced ensemble and boosting algorithms such as XGBoost, LightGBM, and Gradient Boosting.
+- Perform broader hyperparameter optimization and compare models using metrics better suited to imbalanced multi-class classification, such as macro F1-score and balanced accuracy.
+- Develop a time-aware validation strategy to better evaluate predictions for future Olympic Games.
+- Expand the prediction system to additional swimming events and athlete-level predictions.
+- Deploy the final prediction pipeline as an interactive web application or dashboard.
 
 ---
 
