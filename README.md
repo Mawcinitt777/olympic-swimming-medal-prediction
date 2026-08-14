@@ -86,7 +86,17 @@ The project followed a complete machine learning workflow:
 - Countries were ranked using a weighted medal score derived from predicted probabilities.
 - Predicted podiums were generated for selected men's and women's swimming events and exported to CSV.
 - A visualization dashboard was created to compare the top-ranked countries across the selected events.
-  
+
+---
+
+## Model Limitations
+
+- The dataset is imbalanced, with non-medal observations representing the majority class. This limits the models' ability to correctly identify individual medal categories.
+- Cross-validation results indicate that model performance varies across different data partitions, suggesting limited generalization capability.
+- The prediction model uses historical Olympic results through 2020 to estimate outcomes for 2028. Therefore, the predictions involve temporal extrapolation beyond the observed training period.
+- The model relies primarily on year, gender, country, and event. It does not include athlete-level variables such as recent performance, personal best times, rankings, age, injuries, or results from recent international competitions.
+- The predicted podiums should therefore be interpreted as experimental machine learning estimates rather than definitive forecasts of the 2028 Olympic results.
+
 ---
 
 ## Repository Structure
