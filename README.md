@@ -68,18 +68,25 @@ The project followed a complete machine learning workflow:
 6. Hyperparameter tuning with GridSearchCV.
 7. Class balancing using a weighted Random Forest model.
 8. Medal probability prediction for the 2028 Olympic Games.
-9. Dashboard visualization of predicted podiums.
+9. Country ranking using probability-weighted medal scores.
+10. Predicted podium generation for selected swimming events.
+11. Dashboard visualization and CSV export.
 
 ---
 
 ## Key Results
 
-- Random Forest achieved the best overall predictive performance.
-- Hyperparameter tuning was performed using GridSearchCV.
-- Class balancing improved the treatment of minority medal classes.
-- Medal probabilities were generated instead of only class predictions.
-- The final model ranked countries according to their predicted medal performance for selected events in the 2028 Olympic Games.
-
+- Logistic Regression achieved the highest overall test accuracy among the initial model evaluations, although its ability to identify medal-winning cases was limited.
+- Decision Tree and Random Forest models were evaluated for multi-class medal prediction.
+- The dataset showed substantial class imbalance, with non-medal observations representing the majority class.
+- Five-fold cross-validation of the Random Forest produced an average accuracy of approximately 41.6%, highlighting limitations in model generalization.
+- GridSearchCV was used to explore Random Forest hyperparameters.
+- A class-weighted Random Forest was trained to address class imbalance and was used as the final model for probability-based 2028 predictions.
+- The final model generated probabilities for Gold, Silver, Bronze, and no-medal outcomes.
+- Countries were ranked using a weighted medal score derived from predicted probabilities.
+- Predicted podiums were generated for selected men's and women's swimming events and exported to CSV.
+- A visualization dashboard was created to compare the top-ranked countries across the selected events.
+  
 ---
 
 ## Repository Structure
